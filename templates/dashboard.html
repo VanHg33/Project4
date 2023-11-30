@@ -24,7 +24,7 @@
   <header>
     <div class="navigation">
       <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="/"><img src="../static/images/home.jpg" style="width:70px;height:60px;"></a>
+        <a class="navbar-brand" href="index.html"><img src="../static/images/home.jpg" style="width:70px;height:60px;"></a>
         <a class="navbar-brand"> SolarPower </a>
         <br>
 
@@ -37,24 +37,26 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <!-- <a class="nav-link" href="/dashboard"> Dashboard </a> -->
-              <a href="https://public.tableau.com/app/profile/ola.olupeka/viz/Project_4_Ola/Sheet1?publish=yes"> Tableau Dashboard </a>
+              <a class="nav-link" href="dashboard.html" role="button" aria-haspopup="true" aria-expanded="false">
+                Dashboard </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/map" role="button" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="map.html" role="button" aria-haspopup="true" aria-expanded="false">
                 Map </a>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false"> Statistics </a>
+            <li class="nav-item">
+              <a class="nav-link"
+                  href="https://github.com/VanHg33/Module_23-24_Project_4_FinalProject/blob/main/Machine%20-%20Learning.ipynb"
+                  target="_blank">
+                  Machine Learning </a>
+          </li>
 
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/Employment"> Employment</a>
-                <a class="dropdown-item" href="/Education"> Education </a>
-                <a class="dropdown-item" href="/Publisher"> Publisher </a>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="https://public.tableau.com/app/profile/ola.olupeka/viz/Project_4_Ola/Sheet1?publish=yes"
+                target="_blank"> Tableau </a>
             </li>
 
           </ul>
@@ -72,37 +74,54 @@
         <div class="col-md-1" id="plot"></div>
       </div>
     </div>
+    <div class="col-lg-8">
+      <div class="box">
+        <p style="font-size: 20px;"> <strong>Leading the Solar Charge: Top 10 Countries in Solar Power Production (Megawatts, 2021)</strong> </p>
+        <strong>1. China:</strong> 306,973 MW <br><br>
+        <strong>2. United States:</strong> 95,209 MW <br><br>
+        <strong>3. Japan:</strong> 74,191 MW <br><br>
+        <strong>4. Germany:</strong> 58,461 MW <br><br>
+        <strong>5. India:</strong> 49,684 MW <br><br>
+        <strong>6. Italy:</strong> 22,698 MW <br><br>
+        <strong>7. Australia:</strong> 19,076 MW <br><br>
+        <strong>8. South Korea :</strong> 18,161 MW <br><br>
+        <strong>9. Vietnam:</strong> 16,660 MW <br><br>
+        <strong>5. Spain:</strong> 15,952 MW <br><br>
+        </p>
+      </div>
+    </div>
+
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-3">
         <div class="well">
-          <h5>Test Subject ID No.:</h5>
+          <h5>Country:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+            <h3 class="panel-title">Solar Capacity Info</h3>
           </div>
           <div id="sample" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
+      <div class="col-md-9">
+        <div id="chart"></div>
       </div>
-      <div class="col-md-5">
+      <!-- <div class="col-md-5">
         <div id="gauge"></div>
-      </div>
+      </div> -->
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-12">
         <div id="chart"></div>
       </div>
-    </div>
-  </div> 
+    </div> -->
+  </div>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="../static/js/dashboard_logic.js"></script>
-  
+
 
 </body>
 

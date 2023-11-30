@@ -22,45 +22,59 @@
 <body>
   <header>
     <div class="navigation">
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="/"><img src="../static/images/home.jpg" style="width:70px;height:60px;"></a> 
-            <a class="navbar-brand" > SolarPower </a>
-            <br>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="../static/images/home.jpg" style="width:70px;height:60px;"></a>
+        <a class="navbar-brand"> SolarPower </a>
+        <br>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/dashboard"> Dashboard </a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html" role="button" aria-haspopup="true" aria-expanded="false">
+                Dashboard </a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/map" role="button" aria-haspopup="true"
-                            aria-expanded="false"> Map </a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="map.html" role="button" aria-haspopup="true" aria-expanded="false">
+                Map </a>
+            </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Statistics </a>
+            <li class="nav-item">
+              <a class="nav-link"
+                  href="https://github.com/VanHg33/Module_23-24_Project_4_FinalProject/blob/main/Machine%20-%20Learning.ipynb"
+                  target="_blank">
+                  Machine Learning </a>
+          </li>
 
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="/Employment"> Employment</a>
-                          <a class="dropdown-item" href="/Education"> Education </a>
-                          <a class="dropdown-item" href="/Publisher"> Publisher </a>
-                        </ul>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://public.tableau.com/app/profile/ola.olupeka/viz/Project_4_Ola/Sheet1?publish=yes" target="_blank"> Tableau </a>
+            </li>
 
-                </ul>
-            </div>
-        </nav>
+          </ul>
+        </div>
+        <style>
+          .legend {
+            line - height: 18px;
+            color: #555;
+          }
+
+          .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+          }
+        </style>
+      </nav>
     </div>
-</header>
+  </header>
 
   <!-- The div that holds our map -->
   <div id="map"></div>
